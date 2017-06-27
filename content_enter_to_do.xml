@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:id="@+id/radio_group"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="15dp">
+
+            <RadioButton
+                android:text="High"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton_high"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_alignRight="@+id/submit_to_do_button"
+                android:layout_alignEnd="@+id/submit_to_do_button"
+                android:layout_marginRight="71dp"
+                android:paddingLeft="10dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginTop="18dp" />
+
+            <RadioButton
+                android:text="Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton_medium"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:layout_above="@+id/radioButton_high"
+                android:layout_alignLeft="@+id/radioButton_high"
+                android:layout_alignStart="@+id/radioButton_high" />
+
+            <RadioButton
+                android:text="Low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton_low"
+                android:paddingLeft="10dp"
+                android:layout_above="@+id/radioButton_medium"
+                android:layout_toRightOf="@+id/radioButton_medium"
+                android:layout_toEndOf="@+id/radioButton_medium" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a to do..."
+                android:textSize="16sp"
+
+                android:id="@+id/enter_edit_text"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:background="@drawable/submit_button"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submit_to_do_button"
+        android:onClick="onClick" />
+
+
+
+</RelativeLayout>
